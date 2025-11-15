@@ -23,11 +23,6 @@ public class Caperucita extends Persona {
     }
 
     @Override
-    public void comer() {
-        System.out.println("Caperucita disfruta un bocadillo.");
-    }
-
-    @Override
     public String toString() {
         return "Caperucita";
     }

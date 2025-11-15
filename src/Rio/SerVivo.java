@@ -2,6 +2,7 @@ package Rio;
 
 public abstract class SerVivo {
     private boolean vivo = true;
+    private String nombre;
 
     public boolean estaVivo() {
         return vivo;
@@ -11,5 +12,11 @@ public abstract class SerVivo {
         this.vivo = vivo;
     }
 
-    public abstract void comer();
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }

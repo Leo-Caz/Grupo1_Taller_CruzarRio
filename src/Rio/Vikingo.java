@@ -17,11 +17,6 @@ public class Vikingo extends Persona {
     }
 
     @Override
-    public void comer() {
-        System.out.println("El vikingo come un trozo de carne para recuperar fuerzas.");
-    }
-
-    @Override
     public String toString() {
         return "Vikingo";
     }
