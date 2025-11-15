@@ -52,8 +52,7 @@ public class ControllerRio {
         imprimirSiEstaAqui(caperucita, false);
         imprimirSiEstaAqui(uva, false);
 
-        System.out.println("\n//Barca está en la " +
-                (barca.isSentido() ? "izquierda//" : "derecha//"));
+        System.out.println("\n//Barca está en la " + (barca.isSentido() ? "izquierda//" : "derecha//"));
         System.out.println();
     }
     private void imprimirSiEstaAqui(SerVivo s, boolean izq) {
@@ -66,7 +65,7 @@ public class ControllerRio {
         System.out.println("0. Solo");
         System.out.println("1. Lobo");
         System.out.println("2. Caperucita");
-        System.out.println("3. Uva");
+        System.out.println("3. Uvas");
         System.out.print("Opción: ");
 
         int opc = -1;
@@ -99,10 +98,12 @@ public class ControllerRio {
         boolean uvaIzq        = uva.isIsIzquierda();
 
         if (loboIzq == caperIzq && loboIzq != vikingoIzq) {
+            System.out.println("Perdiste!!");
             lobo.comer(caperucita);
             return false;
         }
         if (caperIzq == uvaIzq && caperIzq != vikingoIzq) {
+            System.out.println("Perdiste!!");
             caperucita.comer(uva);
             return false;
         }
@@ -115,16 +116,12 @@ public class ControllerRio {
     private boolean jugarDeNuevo() {
         while (true) {
             System.out.print("¿Quieres jugar de nuevo? (s/n): ");
-
             String linea = sc.nextLine();
             if (linea == null) {
                 System.out.println("No se recibió más entrada. Saliendo...");
                 return false;
             }
-
             String resp = linea.trim().toLowerCase();
-
-            // Acepta solo exactamente "s" o "n"
             switch (resp) {
                 case "s" -> {
                     return true;
