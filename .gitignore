@@ -1,0 +1,15 @@
+
+.vscode/
+.idea/
+*.iml
+
+
+*.class
+/bin/
+/out/
+
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
