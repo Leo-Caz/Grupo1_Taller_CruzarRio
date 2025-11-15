@@ -99,11 +99,11 @@ public class ControllerRio {
         boolean uvaIzq        = uva.isIsIzquierda();
 
         if (loboIzq == caperIzq && loboIzq != vikingoIzq) {
-            System.out.println("El lobo se comió a Caperucita...");
+            lobo.comer(caperucita);
             return false;
         }
         if (caperIzq == uvaIzq && caperIzq != vikingoIzq) {
-            System.out.println("Caperucita se comió las uvas...");
+            caperucita.comer(uva);
             return false;
         }
         if (!vikingoIzq && !loboIzq && !caperIzq && !uvaIzq) {
