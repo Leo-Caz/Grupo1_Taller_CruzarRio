@@ -113,12 +113,27 @@ public class ControllerRio {
         return true;
     }
     private boolean jugarDeNuevo() {
-        System.out.print("Responde 's' para sí o 'n' para no ");
-        System.out.print("\n¿Quieres jugar de nuevo? (s/n): ");
         while (true) {
-            String resp = sc.nextLine().trim().toLowerCase();
-            if (resp.equals("s")) return true;
-            if (resp.equals("n")) return false;
+            System.out.print("¿Quieres jugar de nuevo? (s/n): ");
+
+            String linea = sc.nextLine();
+            if (linea == null) {
+                System.out.println("No se recibió más entrada. Saliendo...");
+                return false;
+            }
+
+            String resp = linea.trim().toLowerCase();
+
+            // Acepta solo exactamente "s" o "n"
+            switch (resp) {
+                case "s" -> {
+                    return true;
+                }
+                case "n" -> {
+                    return false;
+                }
+                default -> System.out.println("Entrada no válida. Escribe solo 's' para sí o 'n' para no.\n");
+            }
         }
     }
 }
