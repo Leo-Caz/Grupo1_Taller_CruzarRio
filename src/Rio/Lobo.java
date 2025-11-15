@@ -5,7 +5,8 @@ public class Lobo extends SerVivo {
     private final boolean dientes;
     private final boolean osico;
 
-    public Lobo() {
+    public Lobo(boolean izq){
+        super("Lobo", true);
         this.patas = true;
         this.dientes = true;
         this.osico = true;
@@ -28,10 +29,5 @@ public class Lobo extends SerVivo {
             caperucita.setVivo(false);
             System.out.println("El lobo se comio a Caperucita.");
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Lobo";
     }
 }

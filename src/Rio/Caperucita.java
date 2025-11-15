@@ -3,8 +3,8 @@ package Rio;
 public class Caperucita extends Persona {
     private final boolean capa;
 
-    public Caperucita(boolean capa) {
-        super(true, true);
+    public Caperucita(boolean izq,boolean capa) {
+        super("Caperucita",true, true,true);
         this.capa = capa;
     }
 
@@ -16,14 +16,6 @@ public class Caperucita extends Persona {
         if (uva == null) {
             return;
         }
-        if (uva.estaFresca()) {
-            uva.serComida();
-            System.out.println("Caperucita no se pudo resistir y se comio las uvas.");
-        }
-    }
-
-    @Override
-    public String toString() {
-        return "Caperucita";
+        System.out.println("Caperucita no se pudo resistir y se comio las uvas.");
     }
 }
