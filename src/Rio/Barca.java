@@ -1,3 +1,5 @@
+package Rio;
+
 public class Barca {
     private static final int CAPACIDAD_MAXIMA = 2;
     private Lado ladoActual;

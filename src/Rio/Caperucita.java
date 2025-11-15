@@ -1,3 +1,5 @@
+package Rio;
+
 public class Caperucita extends Persona {
     private final boolean capa;
 

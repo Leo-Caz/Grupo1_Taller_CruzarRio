@@ -1,3 +1,5 @@
+package Rio;
+
 public abstract class SerVivo {
     private boolean vivo = true;
 

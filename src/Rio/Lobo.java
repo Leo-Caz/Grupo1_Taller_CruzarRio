@@ -1,3 +1,5 @@
+package Rio;
+
 public class Lobo extends SerVivo {
     private final boolean patas;
     private final boolean dientes;

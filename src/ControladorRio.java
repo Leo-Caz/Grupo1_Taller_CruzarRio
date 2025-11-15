@@ -1,6 +1,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
+import Rio.Barca;
+import Rio.Caperucita;
+import Rio.Lado;
+import Rio.Lobo;
+import Rio.SerVivo;
+import Rio.Uva;
+import Rio.Vikingo;
+
 public class ControladorRio {
     private final Vikingo vikingo = new Vikingo(true);
     private final Caperucita caperucita = new Caperucita(true);

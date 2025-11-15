@@ -1,3 +1,5 @@
+package Rio;
+
 public class Uva {
     private final String color;
     private boolean fresca;

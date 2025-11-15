@@ -1,3 +1,5 @@
+package Rio;
+
 public abstract class Persona extends SerVivo {
     private final boolean boca;
     private final boolean brazos;

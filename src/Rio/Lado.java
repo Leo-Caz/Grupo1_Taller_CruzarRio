@@ -1,3 +1,5 @@
+package Rio;
+
 public enum Lado {
     IZQUIERDA,
     DERECHA;

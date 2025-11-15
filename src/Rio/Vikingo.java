@@ -1,3 +1,5 @@
+package Rio;
+
 public class Vikingo extends Persona {
     private final boolean casco;
 
